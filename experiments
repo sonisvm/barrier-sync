@@ -1,0 +1,14 @@
+Things we could compare
+
+OpenMP
+
+make implicit barrier - Done
+counting barrier with sense reversal
+counting barrier with sense reversal and delay
+
+MPI
+tournament barrier
+dissemination barrier
+check if there is a way to implement implicit MPI barrier
+
+
