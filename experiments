@@ -14,6 +14,10 @@ check if there is a way to implement implicit MPI barrier
 Challenges
 Lots of variance in the measurement from one run to another
 
+Observation
+------------------
+Counting barrier when executed along with Tournament is showing more time because each process is executing code before the barrier. This might cause the process to reach the barrier at different times, causing more delay. 
+
 
 
 Implicit barrier threads 12 barriers 10
@@ -308,7 +312,390 @@ T barrier process 12 barrier 10
  Time taken = 6.400000
 
 
+T + counting barrier process 2 threads 2 barriers 10
 
+Time taken in counting barrier for process 0 = 194.700000
+ Time taken = 2.400000
+Time taken in counting barrier for process 1 = 1166.300000
+ Time taken = 2.400000
+
+T + counting barrier process 2 threads 4 barriers 10
+
+Time taken in counting barrier for process 0 = 2096.200000
+Time taken in counting barrier for process 1 = 2277.100000
+ Time taken = 3.100000
+ Time taken = 3.200000
+
+T + counting barrier process 2 threads 6 barriers 10
+
+Time taken in counting barrier for process 1 = 1984.700000
+ Time taken = 2.100000
+Time taken in counting barrier for process 0 = 4795.700000
+ Time taken = 1.900000
+
+
+T + counting barrier process 2 threads 8 barriers 10
+
+Time taken in counting barrier for process 0 = 3085.400000
+Time taken in counting barrier for process 1 = 3989.300000
+ Time taken = 2.100000
+ Time taken = 2.200000
+
+T + counting barrier process 2 threads 10 barriers 10
+
+Time taken in counting barrier for process 0 = 5489.000000
+Time taken in counting barrier for process 1 = 7087.600000
+ Time taken = 2.100000
+ Time taken = 2.300000
+
+
+T + counting barrier process 2 threads 12 barriers 10
+
+Time taken in counting barrier for process 1 = 7993.200000
+ Time taken = 2.100000
+Time taken in counting barrier for process 0 = 9108.700000
+ Time taken = 2.100000
+
+T + counting barrier process 4 threads 2 barriers 10
+
+Time taken in counting barrier for process 3 = 52.700000
+Time taken in counting barrier for process 1 = 335.900000
+Time taken in counting barrier for process 0 = 431.000000
+ Time taken = 4.600000
+Time taken in counting barrier for process 2 = 826.800000
+ Time taken = 3.600000
+ Time taken = 3.200000
+ Time taken = 4.200000
+
+
+T + counting barrier process 4 threads 4 barriers 10
+
+Time taken in counting barrier for process 2 = 1364.400000
+Time taken in counting barrier for process 3 = 1346.800000
+Time taken in counting barrier for process 0 = 1937.300000
+ Time taken = 7.800000
+ Time taken = 7.000000
+Time taken in counting barrier for process 1 = 2345.000000
+ Time taken = 7.300000
+ Time taken = 3.400000
+
+
+T + counting barrier process 4 threads 6 barriers 10
+
+Time taken in counting barrier for process 2 = 2015.400000
+Time taken in counting barrier for process 0 = 2146.000000
+Time taken in counting barrier for process 1 = 2345.000000
+ Time taken = 3.500000
+ Time taken = 4.500000
+ Time taken = 4.400000
+Time taken in counting barrier for process 3 = 2552.700000
+ Time taken = 3.700000
+
+
+T + counting barrier process 4 threads 8 barriers 10
+
+Time taken in counting barrier for process 0 = 3381.700000
+Time taken in counting barrier for process 3 = 3508.400000
+Time taken in counting barrier for process 2 = 3684.300000
+ Time taken = 4.200000
+Time taken in counting barrier for process 1 = 3803.700000
+ Time taken = 3.700000
+ Time taken = 3.500000
+ Time taken = 4.400000
+
+
+T + counting barrier process 4 threads 10 barriers 10
+
+Time taken in counting barrier for process 0 = 5457.500000
+Time taken in counting barrier for process 1 = 6555.200000
+Time taken in counting barrier for process 2 = 6562.900000
+ Time taken = 4.800000
+ Time taken = 4.600000
+ Time taken = 3.600000
+Time taken in counting barrier for process 3 = 6659.900000
+ Time taken = 3.800000
+
+
+T + counting barrier process 4 threads 12 barriers 10
+
+Time taken in counting barrier for process 2 = 8568.800000
+Time taken in counting barrier for process 3 = 9575.500000
+Time taken in counting barrier for process 0 = 9574.500000
+Time taken in counting barrier for process 1 = 10558.400000
+ Time taken = 4.100000
+ Time taken = 4.800000
+ Time taken = 5.100000
+ Time taken = 3.700000
+
+T + counting barrier process 6 threads 2 barriers 10
+
+Time taken in counting barrier for process 2 = 40.000000
+Time taken in counting barrier for process 4 = 132.400000
+Time taken in counting barrier for process 1 = 918.900000
+Time taken in counting barrier for process 0 = 1023.300000
+Time taken in counting barrier for process 3 = 1024.800000
+Time taken in counting barrier for process 5 = 1023.400000
+ Time taken = 5.400000
+ Time taken = 6.700000
+ Time taken = 6.300000
+ Time taken = 6.500000
+ Time taken = 5.600000
+ Time taken = 5.200000
+
+T + counting barrier process 6 threads 4 barriers 10
+
+Time taken in counting barrier for process 2 = 1629.000000
+Time taken in counting barrier for process 5 = 1639.000000
+Time taken in counting barrier for process 1 = 1856.400000
+Time taken in counting barrier for process 3 = 1941.800000
+Time taken in counting barrier for process 0 = 1950.700000
+ Time taken = 4.200000
+ Time taken = 4.900000
+ Time taken = 5.000000
+Time taken in counting barrier for process 4 = 1957.100000
+ Time taken = 3.900000
+ Time taken = 4.300000
+ Time taken = 5.200000
+
+
+T + counting barrier process 6 threads 6 barriers 10
+
+Time taken in counting barrier for process 3 = 1860.900000
+Time taken in counting barrier for process 0 = 1942.400000
+Time taken in counting barrier for process 1 = 1942.500000
+Time taken in counting barrier for process 5 = 2048.500000
+Time taken in counting barrier for process 4 = 2652.200000
+ Time taken = 4.400000
+ Time taken = 5.400000
+ Time taken = 5.200000
+Time taken in counting barrier for process 2 = 4449.500000
+ Time taken = 4.300000
+ Time taken = 5.500000
+ Time taken = 5.800000
+
+
+T + counting barrier process 6 threads 8 barriers 10
+
+Time taken in counting barrier for process 1 = 3035.700000
+Time taken in counting barrier for process 0 = 4061.800000
+Time taken in counting barrier for process 3 = 4147.800000
+Time taken in counting barrier for process 2 = 4750.300000
+Time taken in counting barrier for process 4 = 5345.800000
+ Time taken = 4.600000
+ Time taken = 4.900000
+ Time taken = 5.400000
+ Time taken = 5.500000
+Time taken in counting barrier for process 5 = 8058.000000
+ Time taken = 4.400000
+ Time taken = 5.800000
+
+T + counting barrier process 6 threads 10 barriers 10
+
+Time taken in counting barrier for process 3 = 5655.800000
+Time taken in counting barrier for process 5 = 6042.700000
+Time taken in counting barrier for process 2 = 6265.600000
+Time taken in counting barrier for process 4 = 6250.700000
+Time taken in counting barrier for process 0 = 6744.100000
+ Time taken = 5.800000
+Time taken in counting barrier for process 1 = 6971.600000
+ Time taken = 4.700000
+ Time taken = 4.700000
+ Time taken = 5.600000
+ Time taken = 4.800000
+ Time taken = 5.900000
+
+
+T + counting barrier process 6 threads 12 barriers 10
+
+Time taken in counting barrier for process 1 = 7534.100000
+Time taken in counting barrier for process 0 = 8227.800000
+Time taken in counting barrier for process 2 = 8326.700000
+Time taken in counting barrier for process 3 = 8517.200000
+Time taken in counting barrier for process 4 = 8746.300000
+ Time taken = 6.300000
+ Time taken = 4.700000
+ Time taken = 5.900000
+ Time taken = 6.100000
+ Time taken = 5.300000
+Time taken in counting barrier for process 5 = 11122.000000
+ Time taken = 4.600000
+
+T + counting barrier process 8 threads 2 barriers 10
+
+Time taken in counting barrier for process 6 = 213.300000
+Time taken in counting barrier for process 7 = 410.800000
+Time taken in counting barrier for process 2 = 418.600000
+Time taken in counting barrier for process 5 = 606.900000
+Time taken in counting barrier for process 0 = 912.800000
+Time taken in counting barrier for process 1 = 995.500000
+Time taken in counting barrier for process 4 = 1219.100000
+Time taken in counting barrier for process 3 = 1303.800000
+ Time taken = 5.900000
+ Time taken = 5.000000
+ Time taken = 6.800000
+ Time taken = 5.800000
+ Time taken = 6.600000
+ Time taken = 5.100000
+ Time taken = 7.200000
+ Time taken = 7.100000
+
+
+T + counting barrier process 8 threads 4 barriers 10
+
+Time taken in counting barrier for process 5 = 1481.200000
+Time taken in counting barrier for process 6 = 1512.500000
+Time taken in counting barrier for process 2 = 1815.900000
+Time taken in counting barrier for process 3 = 1812.500000
+Time taken in counting barrier for process 4 = 1731.200000
+ Time taken = 6.200000
+ Time taken = 5.300000
+ Time taken = 5.700000
+Time taken in counting barrier for process 7 = 1834.800000
+ Time taken = 4.900000
+ Time taken = 6.400000
+Time taken in counting barrier for process 0 = 1831.600000
+ Time taken = 6.700000
+Time taken in counting barrier for process 1 = 1933.300000
+ Time taken = 5.900000
+ Time taken = 6.100000
+
+
+T + counting barrier process 8 threads 6 barriers 10
+
+Time taken in counting barrier for process 7 = 1730.200000
+Time taken in counting barrier for process 5 = 1860.500000
+Time taken in counting barrier for process 6 = 1956.300000
+Time taken in counting barrier for process 1 = 4153.900000
+Time taken in counting barrier for process 3 = 4139.300000
+Time taken in counting barrier for process 0 = 4431.600000
+Time taken in counting barrier for process 2 = 4455.300000
+ Time taken = 6.100000
+Time taken in counting barrier for process 4 = 5753.200000
+ Time taken = 5.300000
+ Time taken = 5.700000
+ Time taken = 6.300000
+ Time taken = 4.500000
+ Time taken = 5.500000
+ Time taken = 4.800000
+ Time taken = 5.100000
+
+
+T + counting barrier process 8 threads 8 barriers 10
+
+Time taken in counting barrier for process 2 = 2821.200000
+Time taken in counting barrier for process 0 = 3136.700000
+Time taken in counting barrier for process 4 = 3237.100000
+Time taken in counting barrier for process 3 = 3326.600000
+Time taken in counting barrier for process 5 = 3333.800000
+Time taken in counting barrier for process 1 = 3330.700000
+Time taken in counting barrier for process 7 = 3427.900000
+Time taken in counting barrier for process 6 = 3838.000000
+ Time taken = 4.900000
+ Time taken = 4.900000
+ Time taken = 5.800000
+ Time taken = 4.600000
+ Time taken = 5.300000
+ Time taken = 4.400000
+ Time taken = 4.100000
+ Time taken = 5.600000
+
+
+T + counting barrier process 8 threads 10 barriers 10
+
+Time taken in counting barrier for process 0 = 5334.500000
+Time taken in counting barrier for process 1 = 5620.200000
+Time taken in counting barrier for process 2 = 5837.800000
+Time taken in counting barrier for process 3 = 5820.800000
+Time taken in counting barrier for process 5 = 5926.000000
+Time taken in counting barrier for process 4 = 6225.100000
+Time taken in counting barrier for process 6 = 6236.600000
+ Time taken = 5.600000
+ Time taken = 4.900000
+ Time taken = 5.000000
+ Time taken = 5.600000
+Time taken in counting barrier for process 7 = 6716.800000
+ Time taken = 5.400000
+ Time taken = 6.000000
+ Time taken = 5.300000
+ Time taken = 4.800000
+
+T + counting barrier process 8 threads 12 barriers 10
+
+Time taken in counting barrier for process 2 = 6767.400000
+Time taken in counting barrier for process 7 = 6857.300000
+Time taken in counting barrier for process 1 = 6864.900000
+Time taken in counting barrier for process 4 = 7145.400000
+Time taken in counting barrier for process 5 = 7272.100000
+Time taken in counting barrier for process 3 = 7758.000000
+ Time taken = 5.800000
+ Time taken = 5.300000
+ Time taken = 6.300000
+Time taken in counting barrier for process 6 = 7555.800000
+ Time taken = 6.500000
+ Time taken = 6.800000
+ Time taken = 5.100000
+Time taken in counting barrier for process 0 = 7764.000000
+ Time taken = 6.500000
+ Time taken = 5.500000
+
+
+Dissemination process 2 
+Time taken for process 0 = 16.500000
+Time taken for process 1 = 15.500000
+
+Dissemination process 4
+Time taken for process 0 = 11.750000
+Time taken for process 1 = 21.250000
+Time taken for process 2 = 11.500000
+Time taken for process 3 = 8.250000
+
+Dissemination process 6
+Time taken for process 5 = 9.833333
+Time taken for process 0 = 8.166667
+Time taken for process 1 = 11.666667
+Time taken for process 2 = 11.666667
+Time taken for process 3 = 11.833333
+Time taken for process 4 = 11.833333
+
+
+Dissemination process 8
+
+Time taken for process 3 = 6.125000
+Time taken for process 4 = 27.750000
+Time taken for process 5 = 33.375000
+Time taken for process 6 = 21.250000
+Time taken for process 7 = 21.750000
+Time taken for process 0 = 32.875000
+Time taken for process 1 = 33.250000
+Time taken for process 2 = 32.875000
+
+
+Dissemination process 10
+Time taken for process 8 = 21.600000
+Time taken for process 9 = 22.100000
+Time taken for process 0 = 9.600000
+Time taken for process 1 = 32.800000
+Time taken for process 2 = 33.200000
+Time taken for process 3 = 32.800000
+Time taken for process 4 = 5.900000
+Time taken for process 5 = 31.200000
+Time taken for process 6 = 22.500000
+Time taken for process 7 = 12.900000
+
+Dissemination process 12 
+
+Time taken for process 0 = 22.750000
+Time taken for process 1 = 19.916667
+Time taken for process 2 = 16.583333
+Time taken for process 3 = 14.250000
+Time taken for process 4 = 11.083333
+Time taken for process 5 = 10.416667
+Time taken for process 6 = 8.000000
+Time taken for process 7 = 34.500000
+Time taken for process 8 = 33.583333
+Time taken for process 9 = 25.916667
+Time taken for process 10 = 33.583333
+Time taken for process 11 = 5.250000
 
 
 

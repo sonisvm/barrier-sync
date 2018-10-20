@@ -1,0 +1,127 @@
+Counting barrier with delay threads 2
+
+ Time taken = 1380.600000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+         17.480035      task-clock (msec)         #    0.558 CPUs utilized          
+                 6      context-switches          #    0.343 K/sec                  
+                 1      cpu-migrations            #    0.057 K/sec                  
+               207      page-faults               #    0.012 M/sec                  
+          42182214      cycles                    #    2.413 GHz                      (79.48%)
+          15260169      stalled-cycles-frontend   #   36.18% frontend cycles idle     (77.28%)
+           8703869      stalled-cycles-backend    #   20.63% backend  cycles idle     (70.19%)
+          46350114      instructions              #    1.10  insns per cycle        
+                                                  #    0.33  stalled cycles per insn  (88.60%)
+           8343036      branches                  #  477.289 M/sec                    (89.69%)
+              8041      branch-misses             #    0.10% of all branches          (84.07%)
+
+       0.031350355 seconds time elapsed
+
+Counting barrier with delay threads 4
+
+ Time taken = 454.500000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+         16.546574      task-clock (msec)         #    2.409 CPUs utilized          
+                 8      context-switches          #    0.483 K/sec                  
+                 3      cpu-migrations            #    0.181 K/sec                  
+               215      page-faults               #    0.013 M/sec                  
+          37398889      cycles                    #    2.260 GHz                      (89.54%)
+          28869565      stalled-cycles-frontend   #   77.19% frontend cycles idle     (76.14%)
+          14242361      stalled-cycles-backend    #   38.08% backend  cycles idle     (58.24%)
+          17241557      instructions              #    0.46  insns per cycle        
+                                                  #    1.67  stalled cycles per insn  (81.63%)
+           3739904      branches                  #  226.023 M/sec                    (81.95%)
+             30737      branch-misses             #    0.82% of all branches          (97.70%)
+
+       0.006869746 seconds time elapsed
+
+Counting barrier with delay threads 6
+
+ Time taken = 272.800000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+         16.987016      task-clock (msec)         #    0.339 CPUs utilized          
+                 8      context-switches          #    0.471 K/sec                  
+                 5      cpu-migrations            #    0.294 K/sec                  
+               223      page-faults               #    0.013 M/sec                  
+          26777377      cycles                    #    1.576 GHz                      (80.50%)
+          21404098      stalled-cycles-frontend   #   79.93% frontend cycles idle     (65.31%)
+          13588969      stalled-cycles-backend    #   50.75% backend  cycles idle     (60.56%)
+           8366061      instructions              #    0.31  insns per cycle        
+                                                  #    2.56  stalled cycles per insn
+           2256795      branches                  #  132.854 M/sec                  
+             16946      branch-misses             #    0.75% of all branches          (96.54%)
+
+       0.050106380 seconds time elapsed
+
+
+Counting barrier with delay threads 8
+
+ Time taken = 330.700000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+         26.096520      task-clock (msec)         #    4.539 CPUs utilized          
+                 9      context-switches          #    0.345 K/sec                  
+                 7      cpu-migrations            #    0.268 K/sec                  
+               228      page-faults               #    0.009 M/sec                  
+          41176146      cycles                    #    1.578 GHz                      (88.16%)
+          32076572      stalled-cycles-frontend   #   77.90% frontend cycles idle     (70.73%)
+          18235438      stalled-cycles-backend    #   44.29% backend  cycles idle     (45.71%)
+          11759929      instructions              #    0.29  insns per cycle        
+                                                  #    2.73  stalled cycles per insn  (79.83%)
+           3979252      branches                  #  152.482 M/sec                    (99.71%)
+             18232      branch-misses             #    0.46% of all branches          (99.60%)
+
+       0.005748996 seconds time elapsed
+
+Counting barrier with delay threads 10
+ Time taken = 304.200000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+         29.935350      task-clock (msec)         #    5.419 CPUs utilized          
+                10      context-switches          #    0.334 K/sec                  
+                10      cpu-migrations            #    0.334 K/sec                  
+               231      page-faults               #    0.008 M/sec                  
+          47357568      cycles                    #    1.582 GHz                      (92.30%)
+          38013335      stalled-cycles-frontend   #   80.27% frontend cycles idle     (66.98%)
+          20225361      stalled-cycles-backend    #   42.71% backend  cycles idle     (53.59%)
+           9096653      instructions              #    0.19  insns per cycle        
+                                                  #    4.18  stalled cycles per insn
+           4083898      branches                  #  136.424 M/sec                  
+             22951      branch-misses             #    0.56% of all branches          (98.79%)
+
+       0.005524563 seconds time elapsed
+
+Counting barrier with delay threads 12
+
+ Time taken = 399.000000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+         44.186799      task-clock (msec)         #    6.786 CPUs utilized          
+                14      context-switches          #    0.317 K/sec                  
+                11      cpu-migrations            #    0.249 K/sec                  
+               243      page-faults               #    0.005 M/sec                  
+          69754212      cycles                    #    1.579 GHz                      (83.48%)
+          54402088      stalled-cycles-frontend   #   77.99% frontend cycles idle     (73.25%)
+          38442965      stalled-cycles-backend    #   55.11% backend  cycles idle     (50.78%)
+          23099514      instructions              #    0.33  insns per cycle        
+                                                  #    2.36  stalled cycles per insn  (79.18%)
+           7447524      branches                  #  168.546 M/sec                    (98.86%)
+             18595      branch-misses             #    0.25% of all branches          (98.36%)
+
+       0.006511916 seconds time elapsed
+
+
+
+
+
+
+
+
