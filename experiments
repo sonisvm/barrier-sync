@@ -640,62 +640,62 @@ Time taken in counting barrier for process 0 = 7764.000000
 
 
 Dissemination process 2 
-Time taken for process 0 = 16.500000
-Time taken for process 1 = 15.500000
+Time taken for process 1 = 4.600000
+Time taken for process 0 = 4.600000
 
 Dissemination process 4
-Time taken for process 0 = 11.750000
-Time taken for process 1 = 21.250000
-Time taken for process 2 = 11.500000
-Time taken for process 3 = 8.250000
+Time taken for process 0 = 3.800000
+Time taken for process 1 = 12.400000
+Time taken for process 2 = 7.600000
+Time taken for process 3 = 6.800000
 
 Dissemination process 6
-Time taken for process 5 = 9.833333
-Time taken for process 0 = 8.166667
-Time taken for process 1 = 11.666667
-Time taken for process 2 = 11.666667
-Time taken for process 3 = 11.833333
-Time taken for process 4 = 11.833333
-
+Time taken for process 5 = 6.100000
+Time taken for process 0 = 18.300000
+Time taken for process 1 = 14.700000
+Time taken for process 2 = 18.300000
+Time taken for process 3 = 13.300000
+Time taken for process 4 = 4.900000
 
 Dissemination process 8
 
-Time taken for process 3 = 6.125000
-Time taken for process 4 = 27.750000
-Time taken for process 5 = 33.375000
-Time taken for process 6 = 21.250000
-Time taken for process 7 = 21.750000
-Time taken for process 0 = 32.875000
-Time taken for process 1 = 33.250000
-Time taken for process 2 = 32.875000
+Time taken for process 6 = 17.200000
+Time taken for process 7 = 14.200000
+Time taken for process 0 = 23.100000
+Time taken for process 1 = 23.400000
+Time taken for process 2 = 22.100000
+Time taken for process 3 = 21.100000
+Time taken for process 4 = 5.800000
+Time taken for process 5 = 23.400000
 
 
 Dissemination process 10
-Time taken for process 8 = 21.600000
-Time taken for process 9 = 22.100000
-Time taken for process 0 = 9.600000
-Time taken for process 1 = 32.800000
-Time taken for process 2 = 33.200000
-Time taken for process 3 = 32.800000
-Time taken for process 4 = 5.900000
-Time taken for process 5 = 31.200000
-Time taken for process 6 = 22.500000
-Time taken for process 7 = 12.900000
+Time taken for process 8 = 19.300000
+Time taken for process 9 = 17.900000
+Time taken for process 0 = 6.200000
+Time taken for process 1 = 29.200000
+Time taken for process 2 = 27.000000
+Time taken for process 3 = 27.800000
+Time taken for process 4 = 27.200000
+Time taken for process 5 = 24.400000
+Time taken for process 6 = 23.900000
+Time taken for process 7 = 8.400000
+
 
 Dissemination process 12 
 
-Time taken for process 0 = 22.750000
-Time taken for process 1 = 19.916667
-Time taken for process 2 = 16.583333
-Time taken for process 3 = 14.250000
-Time taken for process 4 = 11.083333
-Time taken for process 5 = 10.416667
-Time taken for process 6 = 8.000000
-Time taken for process 7 = 34.500000
-Time taken for process 8 = 33.583333
-Time taken for process 9 = 25.916667
-Time taken for process 10 = 33.583333
-Time taken for process 11 = 5.250000
+Time taken for process 11 = 13.800000
+Time taken for process 0 = 36.600000
+Time taken for process 1 = 34.400000
+Time taken for process 2 = 36.700000
+Time taken for process 3 = 5.800000
+Time taken for process 4 = 32.300000
+Time taken for process 5 = 27.900000
+Time taken for process 6 = 25.300000
+Time taken for process 7 = 24.100000
+Time taken for process 8 = 36.700000
+Time taken for process 9 = 21.600000
+Time taken for process 10 = 19.800000
 
 
 
