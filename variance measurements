@@ -1,0 +1,315 @@
+Variance
+
+Counting barrier with delay threads 2 barriers 10 delay_constant 2
+
+ Time taken = 1728.600000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+              5492      cache-misses              #   20.044 % of all cache refs    
+             27400      cache-references                                            
+
+       0.019398802 seconds time elapsed
+
+---------------------------------------------------------------
+ Time taken = 1082.200000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+              5115      cache-misses              #   19.346 % of all cache refs    
+             26440      cache-references                                            
+
+       0.013094635 seconds time elapsed
+
+-----------------------------------------------------------
+ Time taken = 1713.600000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+              2948      cache-misses              #   11.248 % of all cache refs    
+             26208      cache-references                                            
+
+       0.019219703 seconds time elapsed
+--------------------------------------------------------
+ Time taken = 1172.800000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+             10876      cache-misses              #   41.519 % of all cache refs    
+             26195      cache-references                                            
+
+       0.014539806 seconds time elapsed
+
+------------------------------------------------------------
+ Time taken = 1186.400000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+              4175      cache-misses              #   15.604 % of all cache refs    
+             26756      cache-references                                            
+
+       0.014089749 seconds time elapsed
+
+
+
+
+Counting barrier with delay threads 4 barriers 10 delay_constant 2
+
+ Time taken = 423.000000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             32690      cache-misses              #   42.141 % of all cache refs    
+             77572      cache-references                                            
+
+       0.006835774 seconds time elapsed
+
+------------------------------------
+ Time taken = 484.100000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             40109      cache-misses              #   45.787 % of all cache refs    
+             87600      cache-references                                            
+
+       0.007108400 seconds time elapsed
+
+--------------------------------------
+ Time taken = 401.500000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             33294      cache-misses              #   43.510 % of all cache refs    
+             76520      cache-references                                            
+
+       0.006392901 seconds time elapsed
+
+------------------------------------------
+ Time taken = 401.100000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             32614      cache-misses              #   42.205 % of all cache refs    
+             77276      cache-references                                            
+
+       0.006324181 seconds time elapsed
+
+---------------------------------------
+ Time taken = 491.600000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             37876      cache-misses              #   44.882 % of all cache refs    
+             84390      cache-references                                            
+
+       0.007507750 seconds time elapsed
+
+
+Counting barrier with delay threads 6 barriers 10 delay_constant 2
+---------------------------------------------------------------
+
+ Time taken = 266.800000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             32839      cache-misses              #   42.755 % of all cache refs    
+             76808      cache-references                                            
+
+       0.004998957 seconds time elapsed
+
+--------------------------------
+ Time taken = 286.800000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             31194      cache-misses              #   37.029 % of all cache refs    
+             84243      cache-references                                            
+
+       0.005257337 seconds time elapsed
+
+--------------------------------
+ Time taken = 301.900000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             33479      cache-misses              #   39.175 % of all cache refs    
+             85461      cache-references                                            
+
+       0.005409795 seconds time elapsed
+----------------------------------
+ Time taken = 266.900000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             32116      cache-misses              #   37.653 % of all cache refs    
+             85295      cache-references                                            
+
+       0.004582862 seconds time elapsed
+
+-----------------------------------
+ Time taken = 301.900000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             31575      cache-misses              #   36.888 % of all cache refs    
+             85597      cache-references                                            
+
+       0.005485837 seconds time elapsed
+
+
+
+Counting barrier with delay threads 8 barriers 10 delay_constant 2
+----------------------
+ Time taken = 244.300000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             32758      cache-misses              #   41.720 % of all cache refs    
+             78519      cache-references                                            
+
+       0.005141623 seconds time elapsed
+
+
+-----------------------------
+ Time taken = 377.100000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             32897      cache-misses              #   33.918 % of all cache refs    
+             96989      cache-references                                            
+
+       0.005683539 seconds time elapsed
+
+
+-------------------------------
+ Time taken = 353.000000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             27939      cache-misses              #   29.220 % of all cache refs    
+             95615      cache-references                                            
+
+       0.005401129 seconds time elapsed
+
+-----------------------------
+ Time taken = 295.200000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             29659      cache-misses              #   36.099 % of all cache refs    
+             82160      cache-references                                            
+
+       0.005497696 seconds time elapsed
+----------------------------
+ Time taken = 415.500000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             31831      cache-misses              #   35.327 % of all cache refs    
+             90105      cache-references                                            
+
+       0.006561746 seconds time elapsed
+
+
+Counting barrier with delay threads 10 barriers 10 delay_constant 2
+-----------------------
+ Time taken = 341.000000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             38056      cache-misses              #   32.388 % of all cache refs    
+            117500      cache-references                                            
+
+       0.006342315 seconds time elapsed
+
+-----------------
+ Time taken = 302.200000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             31302      cache-misses              #   29.708 % of all cache refs    
+            105366      cache-references                                            
+
+       0.005510847 seconds time elapsed
+
+---------------------
+ Time taken = 287.700000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             21377      cache-misses              #   23.193 % of all cache refs    
+             92170      cache-references                                            
+
+       0.005527703 seconds time elapsed
+
+-------------------------
+ Time taken = 318.800000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             27272      cache-misses              #   26.124 % of all cache refs    
+            104396      cache-references                                            
+
+       0.005198127 seconds time elapsed
+
+
+-----------------------
+ Time taken = 312.200000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             22852      cache-misses              #   24.826 % of all cache refs    
+             92049      cache-references                                            
+
+       0.005701162 seconds time elapsed
+
+
+Counting barrier with delay threads 12 barrier 10 delay_constant 2
+-------------------------
+ Time taken = 237.000000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             28809      cache-misses              #   26.992 % of all cache refs    
+            106731      cache-references                                            
+
+       0.005139164 seconds time elapsed
+
+---------------------
+ Time taken = 339.300000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             28682      cache-misses              #   24.664 % of all cache refs    
+            116289      cache-references                                            
+
+       0.005416857 seconds time elapsed
+
+---------------------------
+ Time taken = 215.400000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             23309      cache-misses              #   21.983 % of all cache refs    
+            106031      cache-references                                            
+
+       0.004749184 seconds time elapsed
+
+------------------------
+ Time taken = 290.200000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             21047      cache-misses              #   21.221 % of all cache refs    
+             99182      cache-references                                            
+
+       0.005487116 seconds time elapsed
+---------------------
+ Time taken = 290.200000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             21047      cache-misses              #   21.221 % of all cache refs    
+             99182      cache-references                                            
+
+       0.005487116 seconds time elapsed

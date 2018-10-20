@@ -3,31 +3,28 @@
 #include <stdlib.h>
 #include <time.h>
 #include <limits.h>
+#include <sys/time.h>
 
 int main(int argc, char *argv[]){
-  	int NUM_THREADS = 2;
-	int BARRIER_COUNT = 5;
-	
-	if(argc > 1){
-		NUM_THREADS = atoi(argv[1]);
-	}
-	if(argc > 2){
-		BARRIER_COUNT = atoi(argv[2]);
-	}
 
-  omp_set_num_threads(NUM_THREADS);
+	int NUM_THREADS = atoi(argv[1]);
 
-  clock_t t = clock();
 
-  for(int i=0; i < BARRIER_COUNT; i++){
-	#pragma omp parallel
-	{
-	}
-	
-  }
+        int BARRIER_COUNT = atoi(argv[2]);
 
-  t = clock()-t;
-  printf("Time taken = %lf\n", ((double)t/CLOCKS_PER_SEC)/BARRIER_COUNT);
+	struct timeval start, end;
 
+  	omp_set_num_threads(NUM_THREADS);
+
+  	gettimeofday(&start, NULL);
+  	for(int i=0; i < BARRIER_COUNT; i++){
+       		#pragma omp parallel
+        	{
+        	}
+        
+  	}
+ 	gettimeofday(&end, NULL);
+  	printf(" Time taken = %lf\n", (double)((end.tv_sec * 1000000 + end.tv_usec)
+                  - (start.tv_sec * 1000000 + start.tv_usec))/BARRIER_COUNT);
   return 0;
 }

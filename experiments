@@ -11,4 +11,304 @@ tournament barrier
 dissemination barrier
 check if there is a way to implement implicit MPI barrier
 
+Challenges
+Lots of variance in the measurement from one run to another
+
+
+
+Implicit barrier threads 12 barriers 10
+------------------------------------------
+ Time taken = 45.700000 microseconds
+ Performance counter stats for './implicit_barrier_openmp 12 10':
+
+              5365      cache-misses              #   12.296 % of all cache refs    
+             43631      cache-references                                            
+
+       0.002836250 seconds time elapsed
+
+Implicit barrier threads 8 barriers 10
+--------------------------------------------
+ Time taken = 31.000000 microseconds
+ Performance counter stats for './implicit_barrier_openmp 8 10':
+
+              6930      cache-misses              #   19.544 % of all cache refs    
+             35458      cache-references                                            
+
+       0.002745566 seconds time elapsed
+
+
+Implicit barrier threads 6 barriers 10
+-----------------------------------------
+ Time taken = 26.400000 microseconds
+ Performance counter stats for './implicit_barrier_openmp 6 10':
+
+              6969      cache-misses              #   22.092 % of all cache refs    
+             31546      cache-references                                            
+
+       0.002688977 seconds time elapsed
+
+Implicit barrier threads 4 barriers 10
+-----------------------------------------
+ Time taken = 21.000000 microseconds
+ Performance counter stats for './implicit_barrier_openmp 4 10':
+
+              4713      cache-misses              #   16.607 % of all cache refs    
+             28379      cache-references                                            
+
+       0.002530912 seconds time elapsed
+
+Implicit barrier threads 2 barriers 10
+-----------------------------------------
+ Time taken = 11.900000 microseconds
+ Performance counter stats for './implicit_barrier_openmp 2 10':
+
+              4876      cache-misses              #   20.651 % of all cache refs    
+             23611      cache-references                                            
+
+       0.002293515 seconds time elapsed
+
+
+Counting barrier threads 2 barriers 10
+--------------------------------------
+ Time taken = 12.700000 microseconds
+
+ Performance counter stats for './counting_barrier 2 10':
+
+              4352      cache-misses              #   18.866 % of all cache refs    
+             23068      cache-references                                            
+
+       0.002502131 seconds time elapsed
+
+Counting barrier threads 4 barriers 10
+--------------------------------------
+ Time taken = 19.300000
+
+ Performance counter stats for './counting_barrier 4 10':
+
+              5423      cache-misses              #   19.228 % of all cache refs    
+             28203      cache-references                                            
+
+       0.002678726 seconds time elapsed
+
+Counting barrier threads 6 barriers 10
+--------------------------------------
+ Time taken = 27.300000
+
+ Performance counter stats for './counting_barrier 6 10':
+
+              6070      cache-misses              #   19.676 % of all cache refs    
+             30849      cache-references                                            
+
+       0.002567804 seconds time elapsed
+
+Counting barrier threads 8 barriers 10
+--------------------------------------
+ Time taken = 34.000000
+
+ Performance counter stats for './counting_barrier 8 10':
+
+              4678      cache-misses              #   12.367 % of all cache refs    
+             37825      cache-references                                            
+
+       0.002837295 seconds time elapsed
+
+
+Counting barrier threads 12 barriers 10
+--------------------------------------
+ Time taken = 45.400000
+
+ Performance counter stats for './counting_barrier 12 10':
+
+              7315      cache-misses              #   14.629 % of all cache refs    
+             50002      cache-references                                            
+
+       0.002622202 seconds time elapsed
+
+Counting barrier with delay threads 2 barriers 10 delay_constant 2
+-----------------------------------------------------------------
+ Time taken = 1185.900000
+
+ Performance counter stats for './counting_barrier_delay 2 10':
+
+              4200      cache-misses              #   15.280 % of all cache refs    
+             27487      cache-references                                            
+
+       0.014117000 seconds time elapsed
+
+
+Counting barrier with delay threads 4 barriers 10 delay_constant 2
+-----------------------------------------------------------------
+ Time taken = 472.600000
+
+ Performance counter stats for './counting_barrier_delay 4 10':
+
+             40692      cache-misses              #   45.383 % of all cache refs    
+             89663      cache-references                                            
+
+       0.007023217 seconds time elapsed
+
+Counting barrier with delay threads 6 barriers 10 delay_constant 2
+-----------------------------------------------------------------
+ Time taken = 290.800000
+
+ Performance counter stats for './counting_barrier_delay 6 10':
+
+             30117      cache-misses              #   39.814 % of all cache refs    
+             75644      cache-references                                            
+
+       0.005237667 seconds time elapsed
+
+Counting barrier with delay threads 8 barriers 10 delay_constant 2
+-----------------------------------------------------------------
+ Time taken = 397.300000
+
+ Performance counter stats for './counting_barrier_delay 8 10':
+
+             34982      cache-misses              #   39.295 % of all cache refs    
+             89025      cache-references                                            
+
+       0.006339209 seconds time elapsed
+
+Counting barrier with delay threads 10 barriers 10 delay_constant 2
+-------------------------------------
+ Time taken = 302.200000
+
+ Performance counter stats for './counting_barrier_delay 10 10':
+
+             31302      cache-misses              #   29.708 % of all cache refs    
+            105366      cache-references                                            
+
+       0.005510847 seconds time elapsed
+
+Counting barrier with delay threads 12 barriers 10 delay_constant 2
+-------------------------------------
+ Time taken = 290.200000
+
+ Performance counter stats for './counting_barrier_delay 12 10':
+
+             21047      cache-misses              #   21.221 % of all cache refs    
+             99182      cache-references                                            
+
+       0.005487116 seconds time elapsed
+
+
+MPI experiments
+---------------------
+
+Implicit barrier process 2 barrier 10
+
+ Time taken = 3.400000
+ Time taken = 3.400000
+
+Implicit barrier process 4 barrier 10
+
+ Time taken = 8.100000
+ Time taken = 10.800000
+ Time taken = 3.900000
+ Time taken = 7.900000
+
+Implicit barrier process 6 barrier 10
+
+ Time taken = 15.800000
+ Time taken = 15.900000
+ Time taken = 13.600000
+ Time taken = 4.800000
+ Time taken = 16.200000
+ Time taken = 20.800000
+
+Implicit barrier process 8 barrier 10
+
+ Time taken = 14.300000
+ Time taken = 25.100000
+ Time taken = 26.200000
+ Time taken = 25.200000
+ Time taken = 17.900000
+ Time taken = 19.500000
+ Time taken = 26.100000
+ Time taken = 5.800000
+
+Implicit barrier process 10 barrier 10
+ Time taken = 7.800000
+ Time taken = 11.500000
+ Time taken = 11.000000
+ Time taken = 6.800000
+ Time taken = 7.000000
+ Time taken = 6.300000
+ Time taken = 13.800000
+ Time taken = 14.100000
+ Time taken = 14.000000
+ Time taken = 14.200000
+
+Implicit barrier process 12 barrier 10
+ Time taken = 37.900000
+ Time taken = 40.700000
+ Time taken = 33.600000
+ Time taken = 22.000000
+ Time taken = 37.500000
+ Time taken = 32.100000
+ Time taken = 10.900000
+ Time taken = 40.700000
+ Time taken = 39.400000
+ Time taken = 26.600000
+ Time taken = 38.200000
+ Time taken = 7.600000
+
+T barrier process 2 barrier 10
+ Time taken = 2.000000
+ Time taken = 2.000000
+
+T barrier process 4 barrier 10
+ Time taken = 4.400000
+ Time taken = 3.700000
+ Time taken = 4.600000
+ Time taken = 3.800000
+
+T barrier process 6 barrier 10
+ Time taken = 5.500000
+ Time taken = 4.800000
+ Time taken = 5.600000
+ Time taken = 4.500000
+ Time taken = 5.300000
+ Time taken = 4.700000
+
+T barrier process 8 barrier 10
+ Time taken = 6.400000
+ Time taken = 5.100000
+ Time taken = 6.500000
+ Time taken = 5.500000
+ Time taken = 6.300000
+ Time taken = 4.800000
+ Time taken = 6.700000
+ Time taken = 5.700000
+
+T barrier process 10 barrier 10
+ Time taken = 6.500000
+ Time taken = 7.600000
+ Time taken = 6.600000
+ Time taken = 7.600000
+ Time taken = 6.500000
+ Time taken = 7.400000
+ Time taken = 6.600000
+ Time taken = 7.500000
+ Time taken = 6.900000
+ Time taken = 7.900000
+
+T barrier process 12 barrier 10
+ Time taken = 7.500000
+ Time taken = 6.200000
+ Time taken = 7.200000
+ Time taken = 6.600000
+ Time taken = 7.600000
+ Time taken = 6.300000
+ Time taken = 7.300000
+ Time taken = 6.600000
+ Time taken = 7.600000
+ Time taken = 6.300000
+ Time taken = 7.400000
+ Time taken = 6.400000
+
+
+
+
+
 
